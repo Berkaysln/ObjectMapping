@@ -13,16 +13,15 @@
 import SwiftUI
 
 struct DetailView: View {
-  
   var details: [Detail]
   
-    var body: some View {
-      VStack {
-        ForEach(details, id:\.self) { detail in
-          Text(String(detail.unitPrice))
-          Text(String(detail.quantity))
-          
-        }
+  var body: some View {
+    VStack {
+      ForEach(details, id:\.self) { detail in
+        Text(String(detail.unitPrice))
+        Text(String(detail.quantity))
+        Text(String(Double(detail.unitPrice) * Double(detail.quantity)))
       }
     }
+  }
 }
