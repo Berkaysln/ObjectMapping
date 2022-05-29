@@ -19,7 +19,6 @@ struct Orders: View {
         ForEach(orders, id:\.self) { item in
           NavigationLink(destination: DetailView(details: item.details)) {
             Text(item.customerID)
-              
           }
         }
       }.onAppear(){

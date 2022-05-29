@@ -20,7 +20,7 @@ struct DetailView: View {
       ForEach(details, id:\.self) { detail in
         Text(String(detail.unitPrice))
         Text(String(detail.quantity))
-        Text(String(Double(detail.unitPrice) * Double(detail.quantity)))
+        Text(String(format: "%.2f", Double(detail.unitPrice) * Double(detail.quantity)))
       }
     }
   }
