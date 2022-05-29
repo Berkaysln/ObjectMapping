@@ -3,7 +3,7 @@
 //  ObjectMapping
 //
 //  Created by Berkay Yaslan on 29.05.2022.
-//
+//s
 //DetailPage: Iphone -> 2 * 200 = 400
 
 import SwiftUI
